@@ -1,19 +1,26 @@
 {
-  "name": "todoShop",
+  "name": "todoshop-front",
   "version": "1.0.0",
-  "description": "todoShop-front",
-  "author": "cheez",
-  "private": true,
+  "description": "",
+  "main": "index.js",
   "scripts": {
     "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuvernacrew/todoShop-front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuvernacrew/todoShop-front/issues"
+  },
+  "homepage": "https://github.com/yuvernacrew/todoShop-front#readme",
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.10.2"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.0.0"
+    "@nuxtjs/vuetify": "^1.9.0"
   }
 }
