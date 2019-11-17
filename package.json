@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/yuvernacrew/todoShop-front#readme",
   "dependencies": {
+    "@nuxtjs/auth": "^4.8.4",
+    "@nuxtjs/axios": "^5.8.0",
     "nuxt": "^2.10.2"
   },
   "devDependencies": {
