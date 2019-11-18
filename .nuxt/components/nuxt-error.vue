@@ -10,6 +10,8 @@
         <NuxtLink class="error-link" to="/">Back to the home page</NuxtLink>
       </p>
 
+      <p class="description" v-else>An error occurred while rendering the page. Check developer tools console for details.</p>
+
       <div class="logo">
         <a href="https://nuxtjs.org" target="_blank" rel="noopener">Nuxt.js</a>
       </div>
@@ -26,7 +28,7 @@ export default {
       default: null
     }
   },
-  head() {
+  head () {
     return {
       title: this.message,
       meta: [
@@ -38,10 +40,10 @@ export default {
     }
   },
   computed: {
-    statusCode() {
+    statusCode () {
       return (this.error && this.error.statusCode) || 500
     },
-    message() {
+    message () {
       return this.error.message || `Error`
     }
   }

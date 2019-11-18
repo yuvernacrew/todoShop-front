@@ -9,7 +9,7 @@
       </v-btn>
     </v-toolbar>
     <template>
-      <v-tabs fixed-tabs>
+      <v-tabs fixed-tabs >
         <v-tab 
           v-for="item in tabItems"
           :key="item"
@@ -352,6 +352,25 @@ export default {
 </script>
 
 <style scoped>
+>>> .theme--light.v-application {
+  background-color: #f3f3f3;
+}
+
+>>> .v-toolbar {
+  position: fixed;
+  width: 100%;
+  height: 56px;
+  z-index: 5;
+}
+
+>>> .v-tabs {
+  position: fixed;
+  top: 56px;
+  width: 100%;
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.08);
+  z-index: 5;
+}
+
 >>> .v-toolbar__content {
   background-color: #1976D2;
 }
@@ -384,7 +403,7 @@ export default {
 
 .listBar {
   padding-left: 0!important;
-  padding-top: 20px;
+  padding-top: 120px;
   list-style: none;
 
   li {
